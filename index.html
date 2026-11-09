@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#102a46">
+  <meta name="robots" content="noindex,nofollow,noarchive">
+  <meta name="description" content="دليل تفاعلي لفهم نظام Home Hunters المقترح: رحلة العميل، الإدارات، المدفوعات، التقارير والذكاء الاصطناعي.">
+  <title>Home Hunters | Interactive System Blueprint</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">تخطى القائمة إلى المحتوى</a>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar" aria-label="قائمة التنقل">
+      <div class="brand-wrap">
+        <div class="brand-mark" aria-hidden="true"><span>H</span><i>×</i><span>H</span></div>
+        <div class="brand-copy"><strong>HOME HUNTERS</strong><small>INTERACTIVE BLUEPRINT</small></div>
+      </div>
+      <div class="sidebar-intro"><span class="sidebar-status-dot"></span> تصور تفاعلي للنظام المقترح</div>
+      <div class="nav-label">استكشف النظام</div>
+      <nav id="mainNav" class="main-nav" aria-label="أقسام الموقع"></nav>
+      <div class="sidebar-footer">
+        <div class="sidebar-mini-title">المرجع التفصيلي</div>
+        <p>نسخة PDF كاملة للرجوع إلى تفاصيل النطاق والموافقات والبيانات.</p>
+        <a class="sidebar-doc" href="docs/Home_Hunters_System_Reference.pdf" target="_blank" rel="noopener">فتح المستند الكامل <span>↗</span></a>
+        <small>H HUNTERS × HOME HUNTERS · 2026</small>
+      </div>
+    </aside>
+    <div class="sidebar-scrim" id="sidebarScrim" hidden></div>
+    <div class="main-frame">
+      <header class="topbar">
+        <div class="topbar-heading">
+          <button id="menuToggle" type="button" class="icon-button menu-toggle" aria-label="فتح القائمة" aria-expanded="false">☰</button>
+          <div class="topbar-title"><div class="eyebrow">HOME HUNTERS / SYSTEM EXPLORER</div><strong id="currentPageTitle">نظرة عامة</strong></div>
+        </div>
+        <div class="topbar-actions">
+          <button class="search-trigger" id="searchTrigger" type="button"><span aria-hidden="true">⌕</span> <span class="search-label">ابحث عن قسم أو خطوة أو تقرير</span> <kbd>/</kbd></button>
+          <button class="icon-button presentation-button" id="focusMode" type="button" title="وضع التركيز" aria-label="وضع التركيز">⛶</button>
+          <span class="topbar-version">الإصدار التوضيحي <span class="version-dot"></span></span>
+        </div>
+      </header>
+      <main id="main" class="main-content" tabindex="-1" aria-live="polite"></main>
+      <footer class="global-footer"><span>نظام واحد. بيانات مترابطة. قرارات أوضح.</span><span>تصوّر مقترح للمراجعة · لا يعرض بيانات تشغيل حقيقية</span></footer>
+    </div>
+  </div>
+  <dialog id="searchDialog" class="search-dialog" aria-label="البحث داخل الموقع">
+    <div class="search-dialog-head"><span class="search-glass">⌕</span><input id="searchInput" type="search" autocomplete="off" placeholder="ابحث: Lead، BOQ، التوقيع، AI، المخزون..." aria-label="كلمات البحث"><button id="closeSearch" type="button" class="close-mini" aria-label="إغلاق البحث">×</button></div>
+    <div class="search-results" id="searchResults"><div class="search-empty">ابحث عن إدارة، خطوة تشغيل، تقرير أو قاعدة موافقة.</div></div>
+    <div class="search-foot"><span>اضغط على نتيجة للانتقال إليها</span><span><kbd>ESC</kbd> للإغلاق</span></div>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
